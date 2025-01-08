@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/icondnd.ico" type="image/x-icon">  
+    <title>Galería de Trabajos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>LA FORGA DEL DUNGEON MASTER</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="sobremi.html">Sobre Mí</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="galeria">
+            <h2>Galería de Trabajos</h2>
+            <div class="galeria">
+                <div class="item">
+                    <img src="image/battlefinal(21x21).jpg" alt="Proyecto 1">
+                    <p>Este es un mapa de 20x20 casillas que utilice para una sesion donde esta era una guarida de un dragon negro, ahora cuento con más elementos para dar más detalles, hasta incluso mejor iluminacion.</p>
+                </div>
+                <div class="item">
+                    <img src="image/Castillo Helado(49x65).jpg" alt="Proyecto 2">
+                    <p>Una batalla final lista para desencadenarse en el Castillo Helado, este es un ejemplo de un mapa 50x50, en este caso 50x69 casillas.<p>
+                </div>
+                <div class="item">
+                    <img src="image/Golem(26x28).jpg" alt="Proyecto 3">
+                    <p>Este mapa es 28x28 que ya entra en la categoria de 50x50, usado para simular una mazmorra en ruinas, con un Golem emergiendo entre las gritas de las Ruinas, con pasajes secretos y trampas de por medio, perfecta para One Shots.</p>
+                </div>
+                <div class="item">
+                    <img src="image/map(25x45).jpg" alt="Proyecto 4">
+                    <p>Una cueva que se encuentra bajo un lago, de ahi el descenso de la parte de abajo, usada para una entrada secreta donde aguardaba un troll alfa, aparte de tener otros seguidores, como goblins, un par de gargolas, este mapa es 25x25.</p>
+                </div>
+                <div class="item">
+                    <img src="image/map(40x40).jpg" alt="Proyecto 5">
+                    <p>Al igual que mazmorras, soy capas de crear aldeas, incluso ciudades con el 50x50, aqui un pequeño pueblo de 40x40, en donde se desencadeno un oscuro pasado y en donde los jugadores pasaron a mejorar sus equipos.</p>
+                </div>
+
+                <div class="item">
+                    <img src="image/Nexar(50x40).jpg" alt="Proyecto 6">
+                    <p>si quieres terrenos de combate la opcion de 50x50 es la mejor, con lujo de detalle en cada casilla te podria servir para una Sesion o un One Shot, este mapa es de 50x40.</p>
+                </div>
+                <div class="item">
+                    <img src="image/Pantano(40x40).jpg" alt="Proyecto 7">
+                    <p>Un Pantano en donde unas misteriosas criaturas guardan para acechar y emboscarte, un mapa mediano de 40x40 casillas podria servirte si quieres una atmosfera realista, los mapas vienen con indicaciones de ciertas parte, eso al pagar se le daran el mapa y un pdf donde sale que tiene de especial y como incluirlo a su campaña.</p>
+                </div>
+                <div class="item">
+                    <img src="image/snow(16x11).jpg"Proyecto 8">
+                    <p>Este mini camino para una emboscada, esta echa para una escena de pela o de rol, donde tu podras hacer lo que se te ocurra con tal de pasarla bien, si quieres mapas personalizados ve a "Contacto".</p>
+                </div>
+                <!-- Agrega más elementos según sea necesario -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 La Forga del Dungeon Master. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Este script se asegurará de que el enlace correspondiente esté resaltado
+        document.addEventListener('DOMContentLoaded', function () {
+            let links = document.querySelectorAll('nav a');  // Obtiene todos los enlaces del menú
+            links.forEach((link) => {
+                // Compara el href de cada enlace con la página actual
+                if (link.getAttribute('href') === 'galeria.html') {
+                    link.classList.add('active');  // Agrega la clase "active" al enlace de la página activa
+                }
+            });
+        });
+    </script>
+</body>
+</html>

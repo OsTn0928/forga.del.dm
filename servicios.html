@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/icondnd.ico" type="image/x-icon">  
+    <title>Servicios Personalizados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>LA FORGA DEL DUNGEON MASTER</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="sobremi.html">Sobre Mí</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="servicios">
+            <h2>Servicios Personalizados</h2>
+            <p>Ofrezco servicios personalizados para llevar tus aventuras de D&D al siguiente nivel. Desde la creación de personajes únicos hasta el diseño de mapas detallados, cada proyecto es hecho a medida para que se ajuste perfectamente a tus necesidades.</p>
+            <div class="servicios-lista">
+                <div class="servicio">
+                    <h3>Creación de personajes únicos</h3>
+                    <p>Personajes diseñados específicamente para tu campaña, con trasfondo, habilidades y historia que encajen perfectamente con tu narrativa.</p>
+                </div>
+                <div class="servicio">
+                    <h3>Diseño de mapas detallados</h3>
+                    <p>Mapas totalmente personalizables, desde mazmorras hasta paisajes completos, con todos los detalles necesarios para hacer tu mundo más inmersivo.</p>
+                </div>
+                <div class="servicio">
+                    <h3>Historias y campañas personalizadas</h3>
+                    <p>Campañas diseñadas para ofrecer una experiencia única, con tramas que se adaptan a tus jugadores y los desafíos que desees incluir.</p>
+                </div>
+            </div>
+            <p>Contáctame para más detalles y empieza a planear tu próxima aventura.</p>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 La Forga del Dungeon Master. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Este script resalta el enlace correspondiente según la página activa
+        document.addEventListener('DOMContentLoaded', function () {
+            let links = document.querySelectorAll('nav a');  // Obtiene todos los enlaces del menú
+            links.forEach((link) => {
+                // Compara el href de cada enlace con la página actual
+                if (link.getAttribute('href') === 'servicios.html') {
+                    link.classList.add('active');  // Agrega la clase "active" al enlace de la página activa
+                }
+            });
+        });
+    </script>
+</body>
+</html>
